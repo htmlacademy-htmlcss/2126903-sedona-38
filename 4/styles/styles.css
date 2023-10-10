@@ -1,15 +1,15 @@
 @font-face {
 	font-family: "PT Sans";
-	src: url("ptsans-400.woff2") format("woff2"),
-		url("ptsans-400.woff") format("woff");
+	src: url("../fonts/ptsans-400.woff2") format("woff2"),
+		url("../fonts/ptsans-400.woff2") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "PT Sans";
-	src: url("ptsans-700.woff2") format("woff2"),
-		url("ptsans-700.woff") format("woff");
+	src: url("../fonts/ptsans-700.woff2") format("woff2"),
+		url("../fonts/ptsans-700.woff2") format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -24,7 +24,6 @@ body {
 .button {
 	font-size: 20px;
 	font-weight: 700;
-	line-height: 36px;
 	color: #FFF;
 	text-transform: uppercase;
 }
@@ -48,9 +47,10 @@ body {
 
 .main-header {
 	width: 1200px;
-	height: 485px;
+	min-height: 485px;
 	background-color: #82B3D3;
 	background-image: url('../image/index-background.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -142,9 +142,10 @@ body {
 
 .aside-container {
 	width: 1200px;
-	height: 415px;
+	min-height: 415px;
 	background-color: #82B3D3;
 	background-image: url('../image/background-blure-mountans.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -178,10 +179,10 @@ body {
 
 .inner-decorate-container {
 	width: 1200px;
-	/* Поменять высоту картинки*/
-	height: 600px;
+	min-height: 412px;
 	background-color: #82B3D3;
 	background-image: url('../image/section-blure-catalog.jpg');
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
