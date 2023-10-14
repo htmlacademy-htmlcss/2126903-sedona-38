@@ -42,7 +42,11 @@ body {
 	font-size: 16px;
 	font-weight: 700;
 	color: #FFF;
+	background-color: #756157;
+	border-radius: 4px;
+	border: none;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 input {
@@ -63,7 +67,13 @@ input::placeholder {
 /* header */
 
 
+.novigation-item {
+	padding: 20px 0;
+}
+
+
 .novigation-link {
+	padding: 20px 16px;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 24px;
@@ -71,31 +81,53 @@ input::placeholder {
 	text-decoration: none;
 }
 
+.novigation-user-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-right: 20px;
+	list-style: none;
+}
+
+.novigation-user-item {}
+
+.novigation-user-link {
+	display: flex;
+	align-items: center;
+	padding: 22px 15px;
+}
+
+
 .page-novigation {
 	display: flex;
 	align-items: center;
 	padding: 0 70px;
+	position: relative;
 }
 
 .main-logo-link {
+	position: absolute;
 	align-self: start;
-	margin-right: 28px;
+	z-index: 1;
 }
-
 
 .novigation-list {
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
 	margin-right: auto;
+	margin-left: 170px;
+	list-style-type: none;
 }
-
-
-
 
 /* page-main */
 
 .page-main {
 	flex-grow: 1;
 }
-
 
 .main-header {
 	display: flex;
@@ -155,6 +187,11 @@ input::placeholder {
 	width: 230px;
 	padding: 103px 85px;
 	text-align: center;
+	background-color: #f0f6fa;
+}
+
+.info-item-color-dark {
+	background-color: #e6f0f6;
 }
 
 .info-item-color {
@@ -168,15 +205,35 @@ input::placeholder {
 
 
 .info-item-title {
+	position: relative;
 	width: 175px;
-	margin: 0 auto;
 	padding: 0;
-	margin-bottom: 60px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
 	text-transform: uppercase;
 	color: #000;
+
+}
+
+.info-item-title::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	background-color: #b3b3b3;
+	opacity: 0.3;
+	top: 100%;
+	width: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.info-item-color .info-item-title::after {
+	background-color: #fff;
+	opacity: 0.3;
 }
 
 .info-item-text {
@@ -299,6 +356,10 @@ input::placeholder {
 	color: #333;
 }
 
+.button-search {
+	font-size: 20px;
+}
+
 .aside-container {
 	width: 1200px;
 	margin-bottom: 40px;
@@ -346,6 +407,14 @@ input::placeholder {
 .aside-email {
 	width: 412px;
 	padding: 12px 20px;
+	border-radius: 4px 0 0 4px;
+	border: none;
+}
+
+.button-following {
+	font-size: 20px;
+	background-color: #82B3D3;
+	border-radius: 0 4px 4px 0;
 }
 
 
