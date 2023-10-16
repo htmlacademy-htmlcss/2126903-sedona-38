@@ -124,18 +124,19 @@
 										</ul>
 									</fieldset>
 								</div>
-								<div>
+								<div class="filter-group-container">
 									<fieldset class=" catalog-filter-group catalog-filter-group-prise">
 										<legend class="catalog-filter-title catalog-filter-title-prise">Стоимость, ₽:</legend>
 										<div class="range">
 											<div class="range-wrapper-inputs">
-												<label class="catalog-filter-label catalog-filter-label-left">
-													<input class="range-input" type="number" value="0" name="min-price">
+												<label class="catalog-filter-label catalog-filter-label-start">
+													<input class="range-input " type="number" value="0" name="min-price">
 													<span class="range-input-placeholder">от</span>
 												</label>
 												<label class="catalog-filter-label">
-													<input class="range-input right" type="number" value="9000" name="max-price">
-													<span class="range-input-placeholder-right">до</span>
+													<input class="range-input range-input-end" type="number" value="9000"
+														name="max-price">
+													<span class="range-input-placeholder-end">до</span>
 												</label>
 											</div>
 											<div class="range range-color">
@@ -155,7 +156,7 @@
 								</div>
 								<div class="catalog-filter-button">
 									<button class="button button-form" type="submit">Применить</button>
-									<button class="button-reset" type="button">Сбросить</button>
+									<button class="button button-reset" type="button">Сбросить</button>
 								</div>
 							</form>
 					</div>
@@ -170,62 +171,69 @@
 							<option value="cheap">Сначала популярное</option>
 							<option value="expensive">Сначала дорогое</option>
 						</select>
-						<div class="filter-icon">
-							<a href="#" class="filter-button table">
-								<span class="visually-hidden">Показать список</span>
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_92901_168)">
-										<path d="M4 0H0V6H4V0Z" fill="black" />
-										<path d="M16 0H12V6H16V0Z" fill="black" />
-										<path d="M10 0H6V6H10V0Z" fill="black" />
-										<path d="M4 8H0V14H4V8Z" fill="black" />
-										<path d="M16 8H12V14H16V8Z" fill="black" />
-										<path d="M10 8H6V14H10V8Z" fill="black" />
-									</g>
-									<defs>
-										<clipPath id="clip0_92901_168">
-											<rect width="16" height="14" fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
-							</a>
-							<a class="filter-button slideshow" href="#">
-								<span class="visually-hidden">Показать карточки</span>
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_92901_278)">
-										<path d="M16 12H0V14H16V12Z" fill="black" />
-										<path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-									</g>
-									<defs>
-										<clipPath id="clip0_92901_278">
-											<rect width="16" height="14" fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
-
-							</a>
-							<a class="filter-button list" href="#">
-								<span class="visually-hidden">Показать...</span>
-								<svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0_92901_294)">
-										<path d="M2 0H0V2H2V0Z" fill="black" />
-										<path d="M16 0H4V2H16V0Z" fill="black" />
-										<path d="M2 4H0V6H2V4Z" fill="black" />
-										<path d="M16 4H4V6H16V4Z" fill="black" />
-										<path d="M2 8H0V10H2V8Z" fill="black" />
-										<path d="M16 8H4V10H16V8Z" fill="black" />
-										<path d="M2 12H0V14H2V12Z" fill="black" />
-										<path d="M16 12H4V14H16V12Z" fill="black" />
-									</g>
-									<defs>
-										<clipPath id="clip0_92901_294">
-											<rect width="16" height="14" fill="white" />
-										</clipPath>
-									</defs>
-								</svg>
-
-							</a>
-						</div>
+						<ul class="filter-icon-list">
+							<li class="filter-icon-item">
+								<a href="#" class="filter-button table">
+									<span class="visually-hidden">Показать список</span>
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_92901_168)">
+											<path d="M4 0H0V6H4V0Z" fill="black" />
+											<path d="M16 0H12V6H16V0Z" fill="black" />
+											<path d="M10 0H6V6H10V0Z" fill="black" />
+											<path d="M4 8H0V14H4V8Z" fill="black" />
+											<path d="M16 8H12V14H16V8Z" fill="black" />
+											<path d="M10 8H6V14H10V8Z" fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_92901_168">
+												<rect width="16" height="14" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li class="filter-icon-item">
+								<a class="filter-button slideshow" href="#">
+									<span class="visually-hidden">Показать карточки</span>
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_92901_278)">
+											<path d="M16 12H0V14H16V12Z" fill="black" />
+											<path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_92901_278">
+												<rect width="16" height="14" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+							<li class="filter-icon-item">
+								<a class="filter-button list" href="#">
+									<span class="visually-hidden">Показать...</span>
+									<svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_92901_294)">
+											<path d="M2 0H0V2H2V0Z" fill="black" />
+											<path d="M16 0H4V2H16V0Z" fill="black" />
+											<path d="M2 4H0V6H2V4Z" fill="black" />
+											<path d="M16 4H4V6H16V4Z" fill="black" />
+											<path d="M2 8H0V10H2V8Z" fill="black" />
+											<path d="M16 8H4V10H16V8Z" fill="black" />
+											<path d="M2 12H0V14H2V12Z" fill="black" />
+											<path d="M16 12H4V14H16V12Z" fill="black" />
+										</g>
+										<defs>
+											<clipPath id="clip0_92901_294">
+												<rect width="16" height="14" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</section>
 				<section class="product-card">
@@ -237,10 +245,12 @@
 									alt="Amara Resort & Spa.">
 								<h3 class="product-card-title">Amara Resort & Spa</h3>
 							</a>
-							<p class="text-card">Гостиница</p>
-							<b class="product-card-price">От 4000 ₽</b>
-							<a href="#" class="button">Подробнее</a>
-							<a href="#" class="button">В избранное</a>
+							<div class="price-conainer">
+								<p class="text-card">Гостиница</p>
+								<b class="product-card-price">От 4000 ₽</b>
+							</div>
+							<a href="#" class="button button-details">Подробнее</a>
+							<a href="#" class="button button-favorites">В избранное</a>
 							<div class="star-icon"></div>
 							<a href="#" class="button button-rating">Рейтинг: 8,5</a>
 						</li>
@@ -250,10 +260,12 @@
 									alt="Villas at Poco Diablo.">
 								<h3 class="product-card-title">Villas at Poco Diablo</h3>
 							</a>
-							<p class="text-card">Гостиница</p>
-							<b class="product-card-price">От 5000 ₽</b>
-							<a href="#" class="button">Подробнее</a>
-							<a href="#" class="button">В избранном</a>
+							<div class="price-conainer">
+								<p class="text-card">Гостиница</p>
+								<b class="product-card-price">От 5000 ₽</b>
+							</div>
+							<a href="#" class="button button-details">Подробнее</a>
+							<a href="#" class="button button-favorites">В избранном</a>
 							<div class="star-icon"></div>
 							<a href="#" class="button button-rating">Рейтинг: 9,2</a>
 						</li>
@@ -263,10 +275,12 @@
 									alt="Desert Quail Inn.">
 								<h3 class="product-card-title">Desert Quail Inn</h3>
 							</a>
-							<p class="text-card">Гостиница</p>
-							<b class="product-card-price">От 2500 ₽</b>
-							<a href="#" class="button">Подробнее</a>
-							<a href="#" class="button">В избранное</a>
+							<div class="price-conainer">
+								<p class="text-card">Гостиница</p>
+								<b class="product-card-price">От 2500 ₽</b>
+							</div>
+							<a href="#" class="button button-details">Подробнее</a>
+							<a href="#" class="button button-favorites">В избранное</a>
 							<div class="star-icon star-icon-three"></div>
 							<a href="#" class="button button-rating">Рейтинг: 6,9</a>
 						</li>
@@ -276,10 +290,12 @@
 									alt="GreenTree Inn.">
 								<h3 class="product-card-title">GreenTree Inn</h3>
 							</a>
-							<p class="text-card">Гостиница</p>
-							<b class="product-card-price">От 1500 ₽</b>
-							<a href="#" class="button">Подробнее</a>
-							<a href="#" class="button">В избранное</a>
+							<div class="price-conainer">
+								<p class="text-card">Гостиница</p>
+								<b class="product-card-price">От 1500 ₽</b>
+							</div>
+							<a href="#" class="button button-details">Подробнее</a>
+							<a href="#" class="button button-favorites">В избранное</a>
 							<div class="star-icon star-icon-two"></div>
 							<a href="#" class="button button-rating">Рейтинг: 5,0</a>
 						</li>
@@ -311,11 +327,11 @@
 				</div>
 				<aside class="main-inner-aside">
 					<div class="main-inner-aside-container">
-						<span class="offer">Подпишитесь на рассылку</span>
+						<h2 class="offer">Подпишитесь на рассылку</h2>
 						<p class="offer-text">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
 						<form class="action-form" action="#">
 							<input class="email" required type="email" name="email" placeholder="Ваш e-mail">
-							<button class="button">Подписаться</button>
+							<button class="button button-following">Подписаться</button>
 						</form>
 					</div>
 				</aside>
