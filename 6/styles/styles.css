@@ -118,7 +118,10 @@ body {
 }
 
 
-.button-user {}
+.button-user {
+	padding: 8px 30px;
+	width: 160px;
+}
 
 
 .main-logo-link {
