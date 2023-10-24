@@ -869,6 +869,8 @@ body {
 .product-card-list-item {
 	width: 300px;
 	padding: 20px;
+	display: grid;
+	grid-template-rows: 3fr;
 	border-radius: 4px;
 	outline: 1px solid #E6E6E6;
 }
@@ -1131,7 +1133,6 @@ body {
 
 .back-button {
 	width: 575px;
-	height: 65px;
 	padding: 12px 26px;
 	background: #83B3D3;
 	border-radius: 10px;
@@ -1164,7 +1165,7 @@ body {
 
 .text-input {
 	position: relative;
-	width: 398px;
+	width: 348px;
 	height: 50px;
 	background: #F2F2F2;
 	border-radius: 4px;
@@ -1173,6 +1174,7 @@ body {
 	line-height: 21px;
 	color: #000000;
 	padding-left: 19px;
+	padding-right: 50px;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -1285,15 +1287,17 @@ body {
 	right: 32px;
 }
 
-.triangel {
+.field-child-age::after {
 	position: absolute;
-	background-image: url(../image/triangle.svg);
+	content: '';
+	display: block;
+	background-image: url('../image/triangle.svg');
+	background-position: center;
 	background-repeat: no-repeat;
 	width: 19px;
 	height: 9px;
 	top: -8px;
 	right: 119px;
-
 }
 
 .child-age-text {
@@ -1389,5 +1393,5 @@ body {
 /*Открывает форму*/
 
 .none {
-	display: none;
+	display: block;
 }
