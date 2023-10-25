@@ -77,21 +77,22 @@
 										<ul class="catalog-filter-list">
 											<li class="catalog-filter-item">
 												<label class="control">
-													<input class="visually-hidden control-input" type="checkbox" name="" checked>
+													<input class="visually-hidden control-input" type="checkbox" name="pool" checked>
 													<span class="control-mark"></span>
 													<span class="control-label">Бассейн</span>
 												</label>
 											</li>
 											<li class="catalog-filter-item">
 												<label class="control">
-													<input class="visually-hidden control-input" type="checkbox" name="" checked>
+													<input class="visually-hidden control-input" type="checkbox" name="parking"
+														checked>
 													<span class="control-mark"></span>
 													<span class="control-label">Парковка</span>
 												</label>
 											</li>
 											<li class="catalog-filter-item">
 												<label class="control">
-													<input class="visually-hidden control-input" type="checkbox" name="">
+													<input class="visually-hidden control-input" type="checkbox" name="WI-FI">
 													<span class="control-mark"></span>
 													<span class="control-label">WI-FI</span>
 												</label>
@@ -107,21 +108,21 @@
 												<label class="control">
 													<input class="visually-hidden control-input" type="radio" name="product-group"
 														checked>
-													<span class="control-mark"></span>
+													<span class="control-mark control-mark-input"></span>
 													<span class="filter-name-item">Гостиница</span>
 												</label>
 											</li>
 											<li class="catalog-filter-item">
 												<label class="control">
 													<input class="visually-hidden control-input" type="radio" name="product-group">
-													<span class="control-mark"></span>
+													<span class="control-mark control-mark-input"></span>
 													<span class="filter-name-item">Мотель</span>
 												</label>
 											</li>
 											<li class="catalog-filter-item">
 												<label class="control">
 													<input class="visually-hidden control-input" type="radio" name="product-group">
-													<span class="control-mark"></span>
+													<span class="control-mark control-mark-input"></span>
 													<span class="filter-name-item">Апартаменты</span>
 												</label>
 											</li>
@@ -143,9 +144,9 @@
 													<span class="range-input-placeholder-end">до</span>
 												</label>
 											</div>
-											<div class="range range-color">
+											<div class="range">
 												<div class="range-scale">
-													<div class="range-bar">
+													<div class="range-bar" style="left: 0; width: 226px;">
 														<button class="range-toggle toggle-min">
 															<span class="visually-hidden">Изменить минимальную цену.</span>
 														</button>
@@ -170,11 +171,13 @@
 					<h2 class="visually-hidden">Фильтр карточек</h2>
 					<div class="filter-search-container">
 						<p class="section-cards-title">Найдено Гостиниц: 38</p>
-						<select class="select-control" aria-label="Сортировка">
-							<option value="popular">Сначала дешёвые</option>
-							<option value="cheap">Сначала популярное</option>
-							<option value="expensive">Сначала дорогое</option>
-						</select>
+						<div class="select">
+							<select class="select-control" aria-label="Сортировка">
+								<option value="popular">Сначала дешёвые</option>
+								<option value="cheap">Сначала популярное</option>
+								<option value="expensive">Сначала дорогое</option>
+							</select>
+						</div>
 						<ul class="filter-icon-list">
 							<li class="filter-icon-item">
 								<a href="#" class="filter-button filter-button-checked table">
