@@ -847,6 +847,7 @@ body {
 }
 
 .control:focus .control-mark {
+	opacity: 0.6;
 	outline: 3px solid #83B3D3;
 }
 
@@ -1248,11 +1249,23 @@ body {
 	opacity: 0.3;
 }
 
-.star-icon {
-	width: 140px;
-	margin-right: 20px;
+.card-star-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+	list-style: none;
 }
 
+.star-item {
+	width: 18px;
+	height: 18px;
+	background-image: url(../image/star-card.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 
 .button-rating {
