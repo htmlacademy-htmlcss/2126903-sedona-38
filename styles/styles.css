@@ -1608,40 +1608,7 @@ body {
 	border-radius: 4px;
 }
 
-.field-child-age {
-	display: block;
-	position: absolute;
-	width: 256px;
-	height: 143px;
-	color: #fff;
-	font-size: 16px;
-	line-height: 21px;
-	background: #333333;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-	border-radius: 10px;
-	top: 54px;
-	right: 32px;
-	z-index: 1;
-}
 
-.field-child-age::after {
-	position: absolute;
-	content: '';
-	display: block;
-	background-image: url('../image/triangle.svg');
-	background-position: center;
-	background-repeat: no-repeat;
-	width: 19px;
-	height: 9px;
-	top: -8px;
-	right: 119px;
-}
-
-.child-age-text {
-	display: block;
-	padding: 15px 18px 18px 22px;
-	text-align: left;
-}
 
 .modal-stok {
 	display: flex;
@@ -1730,6 +1697,41 @@ body {
 	margin-left: 60px;
 }
 
+.field-child-age {
+	display: none;
+	position: absolute;
+	width: 256px;
+	height: 143px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 21px;
+	background: #333333;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	top: 54px;
+	right: 32px;
+	z-index: 1;
+}
+
+.field-child-age::after {
+	position: absolute;
+	content: '';
+	display: block;
+	background-image: url('../image/triangle.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 19px;
+	height: 9px;
+	top: -8px;
+	right: 119px;
+}
+
+.child-age-text {
+	display: block;
+	padding: 15px 18px 18px 22px;
+	text-align: left;
+}
+
 .button-child {
 	position: absolute;
 	top: 15px;
@@ -1741,6 +1743,10 @@ body {
 	background-color: #83B3D3;
 	border: none;
 	color: #fff;
+}
+
+.button-child:hover .field-child-age {
+	display: block;
 }
 
 .button-child:focus {
