@@ -1346,7 +1346,8 @@ body {
 	color: #000;
 }
 
-.pagination-link-continuation:hover {
+.pagination-link-continuation:hover,
+.pagination-link-continuation:focus {
 	background-color: #F2F2F2;
 }
 
@@ -1696,6 +1697,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
+
+.button-child-container:hover .field-child-age {
+	display: block;
+}
+
 
 .field-container {
 	display: flex;
