@@ -67,8 +67,10 @@ body {
 }
 
 .input::placeholder {
-	font-family: 'PT Sans', sans-serif;
+	font-family: inherit;
 	font-size: 18px;
+	color: #000;
+	opacity: 0.6;
 }
 
 .visually-hidden {
@@ -1395,6 +1397,7 @@ body {
 }
 
 .email {
+	font-family: inherit;
 	width: 412px;
 	padding: 12px 20px;
 	border-radius: 4px 0 0 4px;
@@ -1506,13 +1509,13 @@ body {
 }
 
 .text-input {
-	font-family: 'PT Sans', sans-serif;
 	position: relative;
 	width: 348px;
 	height: 50px;
 	background: #F2F2F2;
 	border-radius: 4px;
 	border: none;
+	font-family: inherit;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 21px;
@@ -1650,6 +1653,8 @@ body {
 	width: 10px;
 	height: 21px;
 	appearance: textfield;
+	font-family: inherit;
+	font-weight: 700;
 	border: none;
 	background: #F2F2F2;
 	font-size: 18px;
