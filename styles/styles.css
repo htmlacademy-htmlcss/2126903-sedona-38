@@ -64,18 +64,28 @@ body {
 .input {
 	font-family: inherit;
 	font-size: 18px;
+	font-weight: 700;
 }
 
 .input::placeholder {
 	font-family: inherit;
 	font-size: 18px;
+	font-weight: 700;
 	color: #000;
 	opacity: 0.6;
 }
 
 .visually-hidden {
-	position: fixed;
-	transform: scale(0);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /* header */
@@ -848,7 +858,7 @@ body {
 	opacity: 0.6;
 }
 
-.control:focus .control-mark {
+.control-input:focus .control-mark {
 	opacity: 0.6;
 	outline: 3px solid #83B3D3;
 }
@@ -1182,26 +1192,22 @@ body {
 .card-info-container {
 	display: grid;
 	grid-template-columns: 140px 140px;
-	grid-template-rows: 21px 36px 37px;
+	grid-template-rows: 1fr;
 	column-gap: 20px;
 	row-gap: 16px;
 }
-
 
 .text-card {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-
 	width: 140px;
 	margin-right: auto;
-	line-height: 21px;
 	color: #333;
 }
 
 .product-card-price {
 	text-align: right;
-	line-height: 21px;
 	font-weight: 400;
 	color: #333;
 }
@@ -1526,6 +1532,10 @@ body {
 	padding-bottom: 0;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+}
+
 .text-input:hover {
 	background: #E6E6E6;
 }
@@ -1649,12 +1659,14 @@ body {
 }
 
 .field-number {
-	margin: 15px 63px 15px 60px;
-	width: 10px;
+	margin: 15px 63px 15px 57px;
+	padding: 0;
+	width: 20px;
 	height: 21px;
 	appearance: textfield;
 	font-family: inherit;
 	font-weight: 700;
+	text-align: center;
 	border: none;
 	background: #F2F2F2;
 	font-size: 18px;
@@ -1760,8 +1772,8 @@ body {
 
 .button-child {
 	position: absolute;
-	top: 15px;
-	right: 148px;
+	top: 14px;
+	right: 145px;
 	cursor: pointer;
 	width: 25px;
 	height: 25px;
