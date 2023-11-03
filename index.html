@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>HTML Academy: Седона</title>
+  <link>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
-    <div class="main-container">
+    <div class=" main-container">
       <header class="page-header">
         <nav class="page-novigation">
           <a class="main-logo-link" href="#">
@@ -211,7 +212,7 @@
       </footer>
 
     </div>
-    <div class="modal-container">
+    <div class="modal-container none">
       <div class="modal">
         <button class="modal-close-button">
           <svg class="close-button" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
@@ -221,9 +222,7 @@
           </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section>
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        </section>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-content" method="post">
           <div class="modal-stok">
             <label class="arrival-date" for="arrival">Дата Заезда:</label>
@@ -258,7 +257,7 @@
                   </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
-                <input class="field-number" name="adult" type="number" value="2">
+                <input class="field-number" name="adult" type="number" value="2" max="99">
                 <button class="field-button plus" type="button">
                   <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
                     role="img" aria-label="Плюс.">
@@ -289,7 +288,7 @@
                   </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
-                <input class="field-number" name="adult" type="number" value="1">
+                <input class="field-number" name="adult" type="number" value="1" max="99">
                 <button class="field-button plus" type="button">
                   <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
                     role="img" aria-label="Плюс.">
