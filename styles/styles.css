@@ -1417,12 +1417,17 @@ body {
 }
 
 .email {
-	font-family: inherit;
 	width: 412px;
 	padding: 12px 20px;
+	font-family: inherit;
+	font-weight: 400;
 	border-radius: 4px 0 0 4px;
 	border: none;
 	background-color: #F2F2F2;
+}
+
+.email::placeholder {
+	font-weight: 400;
 }
 
 /* Модальное окно*/
