@@ -9,8 +9,8 @@
   </head>
 
   <body>
-    <div class=" main-container">
-      <header class="page-header">
+    <div class="main-container">
+      <header data-test="header" class="page-header">
         <nav class="page-novigation">
           <a class="main-logo-link" href="#">
             <img class="main-logo" src="image/logo.svg" width="140" height="70" alt="Логотип городка Седона">
@@ -47,19 +47,19 @@
         </nav>
       </header>
 
-      <main class="page-main">
+      <main data-test="main" class="page-main">
         <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
-        <section class="main-header">
+        <section data-test="hero" class="main-header">
           <h2 class="visually-hidden">Приветствие городка Седона</h2>
           <img class="page-main-title" width="458" height="352" src="image/main-header-text-welcome.svg"
             alt="Приветствие на сайте города Седона.">
         </section>
-        <div class="page-advantages">
-          <p class="advantages-title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
-          <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
-        <section class="page-info">
+        <section data-test="advantages" class="page-info">
+          <div class="page-advantages">
+            <p class="advantages-title">Седона — небольшой городок в Аризоне,
+              заслуживающий большего!</p>
+            <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <ul class="info-list">
             <li class="info-item info-item-container">
@@ -94,11 +94,11 @@
             </li>
           </ul>
         </section>
-        <div class="page-aside">
-          <p class="page-aside-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="page-aside-text">Опытный персонал и качественное обслуживание!</p>
-        </div>
-        <section class="page-servies-info">
+        <section data-test="service" class="page-servies-info">
+          <div class="page-aside">
+            <p class="page-aside-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="page-aside-text">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <h2 class="visually-hidden">Услуги города Седоны</h2>
           <ul class="servies-info-list">
             <li class="servies-info-item">
@@ -115,7 +115,7 @@
             </li>
           </ul>
         </section>
-        <section class="search-container">
+        <section data-test="search" class="search-container">
           <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
           <div class="search-inner-container">
             <p class="search-title">Заинтересовались?</p>
@@ -125,7 +125,7 @@
             <a class="button button-search">Поиск гостиницы в седоне</a>
           </div>
         </section>
-        <section class="aside-container">
+        <section data-test="subscribe" class="aside-container">
           <div class="aside-inner-container">
             <h2 class="aside-title">Подпишитесь на рассылку</h2>
             <p class="aside-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -137,7 +137,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer data-test="footer" class="page-footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
