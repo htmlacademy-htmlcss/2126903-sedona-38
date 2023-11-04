@@ -685,8 +685,8 @@ body {
 
 .inner-decorate-container {
 	width: 1060px;
-	padding: 35px 70px 70px 70px;
-	margin-bottom: 50px;
+	padding: 35px 70px 57px 70px;
+	margin-bottom: 52px;
 	background-color: #82B3D3;
 	background-image: url('../image/section-blure-catalog.jpg');
 	background-size: cover;
@@ -699,10 +699,14 @@ body {
 	margin: 0 auto;
 }
 
+.inner-header {
+	margin-bottom: 40px;
+}
+
 .inner-header-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 78px;
@@ -737,7 +741,6 @@ body {
 .breadcrumbs-list {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 28px;
 	margin-right: 237px;
 	display: flex;
 	flex-wrap: wrap;
@@ -772,7 +775,7 @@ body {
 .catalog-filter-group {
 	margin: 0;
 	padding: 0;
-	margin-right: 70px;
+	margin-right: 71px;
 	border: none;
 }
 
@@ -804,7 +807,7 @@ body {
 
 .range-input {
 	width: 70px;
-	padding: 12px 53px 12px 20px;
+	padding: 13px 53px 12px 20px;
 	border-radius: 4px 0 0 4px;
 	border: none;
 	z-index: 1;
@@ -857,7 +860,7 @@ body {
 	position: absolute;
 	display: block;
 	left: 0;
-	top: 3px;
+	top: 2px;
 	width: 20px;
 	height: 20px;
 	border-radius: 4px;
@@ -1035,6 +1038,7 @@ body {
 
 .section-cards {
 	width: 1200px;
+	margin-bottom: 42px;
 }
 
 .filter-search-container {
@@ -1042,7 +1046,6 @@ body {
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
-	margin-bottom: 41px;
 }
 
 .section-cards-title {
@@ -1058,24 +1061,25 @@ body {
 
 .select {
 	position: relative;
-	width: 292px;
+	width: 260px;
 	display: flex;
 	align-items: center;
-	margin-right: 70px;
+	margin-right: 100px;
 }
 
 .select-control {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	padding: 14px 20px;
-	padding-right: 100px;
+	padding: 12px 19px;
+	font-family: inherit;
+	padding-right: 105px;
 	border-radius: 4px;
 	outline: 2px solid #E5E5E5;
 	background-image: url('../image/arow-filter-icon.svg');
 	background-repeat: no-repeat;
 	background-position: right 20px center;
-	font-size: inherit;
+	font-size: 18px;
 	border: none;
 	cursor: pointer;
 }
@@ -1103,7 +1107,7 @@ body {
 }
 
 .filter-icon-item {
-	margin-right: 8px;
+	margin-right: 12px;
 }
 
 .filter-icon-item:nth-child(3n) {
@@ -1111,8 +1115,8 @@ body {
 }
 
 .filter-button {
-	width: 48px;
-	height: 48px;
+	width: 45px;
+	height: 45px;
 	display: flex;
 	align-items: center;
 	border-radius: 4px;
@@ -1181,7 +1185,7 @@ body {
 
 
 .product-img {
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 
 
@@ -1192,7 +1196,7 @@ body {
 .product-card-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 16px;
+	margin-bottom: 14px;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
