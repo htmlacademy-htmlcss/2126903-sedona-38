@@ -1161,10 +1161,6 @@ body {
 	background-image: url('../image/card-list-view-icon.svg');
 }
 
-
-
-
-
 /* card */
 
 .product-card {
@@ -1681,7 +1677,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	font-size: 16px;
 	line-height: 21px;
 	margin-left: 157px;
-
 }
 
 .field-number {
