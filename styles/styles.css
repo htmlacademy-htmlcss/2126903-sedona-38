@@ -34,7 +34,7 @@ body {
 	flex-direction: column;
 	width: 1200px;
 	margin: 0 auto;
-	box-shadow: 0 0 15px 0 #cccccc;
+	box-shadow: 0 0 15px 0 #ccc;
 	background: #FFF;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .button:active {
 	background-color: #756157;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgb(255 255 255 / 30%);
 }
 
 .input {
@@ -114,11 +114,11 @@ body {
 
 .navigation-link:hover,
 .navigation-link:focus {
-	color: rgba(0, 0, 0, 0.6);
+	color: rgb(0 0 0 / 60%);
 }
 
 .navigation-link:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: rgb(0 0 0 / 30%);
 }
 
 .navigation-link-check {
@@ -249,7 +249,7 @@ body {
 .page-main-title {
 	margin-top: 51px;
 	margin-bottom: 82px;
-	padding: 0 200px 0 200px;
+	padding: 0 200px;
 }
 
 .page-advantages {
@@ -296,11 +296,11 @@ body {
 }
 
 .info-item:nth-of-type(even) {
-	background-color: rgba(131, 179, 211, 0.12);
+	background-color: rgb(131 179 211 / 12%);
 }
 
 .info-item:nth-of-type(odd) {
-	background-color: rgba(131, 179, 211, 0.20);
+	background-color: rgb(131 179 211 / 20%);
 }
 
 .info-item:first-child {
@@ -424,7 +424,7 @@ body {
 }
 
 .servies-info-item:nth-of-type(odd) {
-	background-color: rgba(131, 179, 211, 0.12);
+	background-color: rgb(131 179 211 / 12%);
 }
 
 .servies-icon-home {
@@ -581,7 +581,7 @@ body {
 	width: 1060px;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 46px 70px 30px 70px;
+	padding: 46px 70px 30px;
 	align-items: start;
 }
 
@@ -685,7 +685,7 @@ body {
 
 .inner-decorate-container {
 	width: 1060px;
-	padding: 35px 70px 57px 70px;
+	padding: 35px 70px 57px;
 	margin-bottom: 52px;
 	background-color: #82B3D3;
 	background-image: url('../image/section-blure-catalog.jpg');
@@ -824,7 +824,7 @@ body {
 /* Скрывает стрелки управления числового ввода (для Chrome и Safari)*/
 
 .range-input[type='number']::-webkit-inner-spin-button,
-.range-input[type='number']::-webkit-inner-spin-button {
+.range-input[type='number']::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
@@ -871,8 +871,7 @@ body {
 	opacity: 0.6;
 }
 
-.control .control-mark:focus-visible {
-	opacity: 0.6;
+.control-input:focus-visible + .control-mark {
 	outline: 3px solid #83B3D3;
 }
 
@@ -954,7 +953,7 @@ body {
 	position: relative;
 	width: 287px;
 	height: 4px;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgb(255 255 255 / 30%);
 }
 
 .range-bar {
@@ -1022,7 +1021,7 @@ body {
 }
 
 .button-reset:hover {
-	color: rgba(255, 255, 255, 0.6);
+	color: rgb(255 255 255 / 60%);
 	background-color: transparent;
 }
 
@@ -1032,7 +1031,7 @@ body {
 }
 
 .button-reset:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: rgb(255 255 255 / 30%);
 	background-color: transparent;
 }
 
@@ -1207,8 +1206,7 @@ body {
 	display: grid;
 	grid-template-columns: 140px 140px;
 	grid-template-rows: 1fr;
-	column-gap: 20px;
-	row-gap: 16px;
+	gap: 16px 20px;
 }
 
 .text-card {
@@ -1284,7 +1282,7 @@ body {
 .star-item {
 	width: 18px;
 	height: 18px;
-	background-image: url(../image/star-card.svg);
+	background-image: url("../image/star-card.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -1345,7 +1343,7 @@ body {
 }
 
 .pagination-link:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: rgb(255 255 255 / 30%);
 }
 
 .pagination-checked {
@@ -1374,7 +1372,7 @@ body {
 }
 
 .pagination-link-continuation:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: rgb(0 0 0 / 30%);
 	background-color: #F2F2F2;
 }
 
@@ -1439,7 +1437,7 @@ body {
 	display: flex;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(242, 242, 242, 0.8);
+	background-color: rgb(242 242 242 / 80%);
 	z-index: 2;
 }
 
@@ -1448,8 +1446,8 @@ body {
 	width: 577px;
 	margin: auto;
 	padding: 64px 70px;
-	background-color: #ffffff;
-	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	box-shadow: 0 25px 50px rgb(0 0 0 / 15%);
 	border-radius: 30px;
 }
 
@@ -1484,7 +1482,7 @@ body {
 }
 
 .modal-close-button:active .close-button {
-	fill: rgba(0, 0, 0, 0.3);
+	fill: rgb(0 0 0 / 30%);
 }
 
 .modal-title {
@@ -1533,7 +1531,7 @@ body {
 }
 
 .back-button:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: rgb(255 255 255 / 30%);
 }
 
 .text-input {
@@ -1546,14 +1544,11 @@ body {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 21px;
-	color: #000000;
-	padding-left: 19px;
-	padding-right: 50px;
-	padding-top: 13px;
-	padding-bottom: 13px;
+	color: #000;
+	padding: 13px 50px 13px 19px;
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
 	opacity: 0;
 }
 
@@ -1567,8 +1562,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .text-input:active {
-	background: #FFFFFF;
-	outline: 2px solid #000000;
+	background: #FFF;
+	outline: 2px solid #000;
 	color: #000;
 }
 
@@ -1592,7 +1587,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 	bottom: 0;
 	right: 0;
 	display: block;
-	background-image: url(../image/data.svg);
+	background-image: url("../image/data.svg");
 	width: 16px;
 	height: 15px;
 	opacity: 0.3;
@@ -1702,7 +1697,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 /* Скрывает стрелки управления числового ввода (для Chrome и Safari)*/
 
 .field-number[type='number']::-webkit-inner-spin-button,
-.field-number[type='number']::-webkit-inner-spin-button {
+.field-number[type='number']::-webkit-outer-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
@@ -1722,7 +1717,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 26px;
-	color: #000000;
+	color: #000;
 }
 
 .label-field {
@@ -1773,8 +1768,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 	color: #fff;
 	font-size: 16px;
 	line-height: 21px;
-	background: #333333;
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	background: #333;
+	box-shadow: 0 15px 30px rgb(0 0 0 / 30%);
 	border-radius: 10px;
 	z-index: 1;
 }
