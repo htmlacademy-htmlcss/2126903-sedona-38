@@ -879,6 +879,15 @@ body {
 	opacity: 0.3;
 }
 
+.control-disabled {
+	opacity: 0.3;
+	pointer-events: none;
+}
+
+.control-disabled:hover {
+	opacity: 0.3;
+}
+
 .control-input[type='checkbox']:checked + .control-mark::before {
 	position: absolute;
 	content: '';
@@ -1816,4 +1825,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .none {
 	display: none;
+}
+
+/* Неактивные кнопки */
+
+.button-disabled {
+	background-color: #E5E5E5;
+}
+
+.button-disabled:hover {
+	opacity: 1;
+}
+
+.button-disabled:active {
+	opacity: 1;
 }
