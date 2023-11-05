@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
     <div class="main-container">
-      <header class="page-header">
+      <header data-test="header" class="page-header">
         <nav class="page-novigation">
           <a class="main-logo-link" href="#">
             <img class="main-logo" src="image/logo.svg" width="140" height="70" alt="Логотип городка Седона">
@@ -46,19 +47,19 @@
         </nav>
       </header>
 
-      <main class="page-main">
+      <main data-test="main" class="page-main">
         <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
-        <section class="main-header">
+        <section data-test="hero" class="main-header">
           <h2 class="visually-hidden">Приветствие городка Седона</h2>
           <img class="page-main-title" width="458" height="352" src="image/main-header-text-welcome.svg"
             alt="Приветствие на сайте города Седона.">
         </section>
-        <div class="page-advantages">
-          <p class="advantages-title">Седона — небольшой городок в Аризоне,
-            заслуживающий большего!</p>
-          <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
-        <section class="page-info">
+        <section data-test="advantages" class="page-info">
+          <div class="page-advantages">
+            <p class="advantages-title">Седона — небольшой городок в Аризоне,
+              заслуживающий большего!</p>
+            <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <ul class="info-list">
             <li class="info-item info-item-container">
@@ -86,35 +87,35 @@
               <img class="info-img-item" src="image/canyon-photo-2.jpg" width="800" height="385"
                 alt="Достопримечательность городка Седона - Гранд-Каньон">
               <div class="info-item-text-container">
-                <h2 class="info-item-title info-item-color-title">Там есть мост дьявола</h2>
+                <h2 class="info-item-title info-item-color-title">Там есть <br> мост дьявола</h2>
                 <p class="info-item-text info-item-color-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
             </li>
           </ul>
         </section>
-        <div class="page-aside">
-          <p class="page-aside-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-          <p class="page-aside-text">Опытный персонал и качественное обслуживание!</p>
-        </div>
-        <section class="page-servies-info">
+        <section data-test="service" class="page-servies-info">
+          <div class="page-aside">
+            <p class="page-aside-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="page-aside-text">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <h2 class="visually-hidden">Услуги города Седоны</h2>
           <ul class="servies-info-list">
-            <li class="servies-info-item info-item-color-dark">
+            <li class="servies-info-item">
               <h2 class="servies-info-title servies-icon-home">Жильё</h2>
-              <p class="servies-info-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="servies-info-text info-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
             </li>
             <li class="servies-info-item">
               <h2 class="servies-info-title servies-icon-food">Еда</h2>
-              <p class="servies-info-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              <p class="servies-info-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="servies-info-item info-item-color-dark">
+            <li class="servies-info-item">
               <h2 class="servies-info-title servies-icon-souvenirs">Сувениры</h2>
-              <p class="servies-info-text">Не только китайского, но и настоящего местного производства!</p>
+              <p class="servies-info-text">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
-        <section class="search-container">
+        <section data-test="search" class="search-container">
           <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
           <div class="search-inner-container">
             <p class="search-title">Заинтересовались?</p>
@@ -124,7 +125,7 @@
             <a class="button button-search">Поиск гостиницы в седоне</a>
           </div>
         </section>
-        <section class="aside-container">
+        <section data-test="subscribe" class="aside-container">
           <div class="aside-inner-container">
             <h2 class="aside-title">Подпишитесь на рассылку</h2>
             <p class="aside-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -136,7 +137,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer data-test="footer" class="page-footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
@@ -209,8 +210,8 @@
           </a>
         </p>
       </footer>
-
     </div>
+
     <div class="modal-container none">
       <div class="modal">
         <button class="modal-close-button">
@@ -221,14 +222,12 @@
           </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section>
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        </section>
-        <form class="modal-content" method="post">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
           <div class="modal-stok">
             <label class="arrival-date" for="arrival">Дата Заезда:</label>
             <div class="for-button-relative">
-              <input class="text-input" id="arrival" placeholder="27 апреля 2020">
+              <input class="text-input" type="text" id="arrival" value="27 апреля 2020">
               <button class="date-button" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
@@ -239,7 +238,7 @@
           <div class="modal-stok">
             <label class="arrival-date" for="diparture">Дата Выезда:</label>
             <div class="for-button-relative">
-              <input class="text-input" id="diparture" placeholder="1 сентября 2023">
+              <input class="text-input" type="text" id="diparture" value="1 сентября 2023">
               <button class="date-button" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
@@ -258,7 +257,7 @@
                   </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
-                <input class="field-number" name="adult" type="number" value="2">
+                <input class="field-number" name="adult" type="number" value="2" max="99">
                 <button class="field-button plus" type="button">
                   <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
                     role="img" aria-label="Плюс.">
@@ -289,7 +288,7 @@
                   </svg>
                   <span class="visually-hidden">Минус</span>
                 </button>
-                <input class="field-number" name="adult" type="number" value="1">
+                <input class="field-number" name="adult" type="number" value="2" max="99">
                 <button class="field-button plus" type="button">
                   <svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
                     role="img" aria-label="Плюс.">
