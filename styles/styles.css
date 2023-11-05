@@ -706,7 +706,7 @@ body {
 .inner-header-title {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 6px;
+	margin-bottom: 5px;
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 78px;
@@ -846,7 +846,7 @@ body {
 }
 
 .catalog-filter-item {
-	margin-bottom: 16px;
+	margin-bottom: 15px;
 }
 
 .control {
@@ -1086,7 +1086,7 @@ body {
 	outline: 2px solid #E5E5E5;
 	background-image: url('../image/arow-filter-icon.svg');
 	background-repeat: no-repeat;
-	background-position: right 20px center;
+	background-position: right 19px center;
 	font-size: 18px;
 	border: none;
 	cursor: pointer;
@@ -1193,7 +1193,7 @@ body {
 
 
 .product-img {
-	margin-bottom: 12px;
+	margin-bottom: 11px;
 }
 
 
@@ -1222,6 +1222,7 @@ body {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	margin-bottom: -1px;
 	width: 140px;
 	margin-right: auto;
 	color: #333;
