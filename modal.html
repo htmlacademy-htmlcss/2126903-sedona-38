@@ -11,7 +11,7 @@
 	<body>
 		<div class="main-container">
 			<header data-test="header" class="page-header">
-				<nav class="page-novigation">
+				<nav class="page-navigation">
 					<a class="main-logo-link" href="#">
 						<img class="main-logo" src="image/logo.svg" width="140" height="70" alt="Логотип городка Седона">
 					</a>
@@ -96,26 +96,26 @@
 						</li>
 					</ul>
 				</section>
-				<section data-test="service" class="page-servies-info">
+				<section data-test="service" class="page-service-info">
 					<div class="page-aside">
 						<p class="page-aside-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
 						<p class="page-aside-text">Опытный персонал и качественное обслуживание!</p>
 					</div>
 					<h2 class="visually-hidden">Услуги города Седоны</h2>
-					<ul class="servies-info-list">
-						<li class="servies-info-item">
-							<h2 class="servies-info-title servies-icon-home">Жильё</h2>
-							<p class="servies-info-text info-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!
+					<ul class="service-info-list">
+						<li class="service-info-item">
+							<h2 class="service-info-title service-icon-home">Жильё</h2>
+							<p class="service-info-text info-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!
 							</p>
 						</li>
-						<li class="servies-info-item">
-							<h2 class="servies-info-title servies-icon-food">Еда</h2>
-							<p class="servies-info-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
+						<li class="service-info-item">
+							<h2 class="service-info-title service-icon-food">Еда</h2>
+							<p class="service-info-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
 							</p>
 						</li>
-						<li class="servies-info-item">
-							<h2 class="servies-info-title servies-icon-souvenirs">Сувениры</h2>
-							<p class="servies-info-text">Не только китайского,<br>но и настоящего местного производства!</p>
+						<li class="service-info-item">
+							<h2 class="service-info-title service-icon-souvenirs">Сувениры</h2>
+							<p class="service-info-text">Не только китайского,<br>но и настоящего местного производства!</p>
 						</li>
 					</ul>
 				</section>
@@ -135,7 +135,7 @@
 						<h2 class="aside-title">Подпишитесь на рассылку</h2>
 						<p class="aside-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 						<form class="aside-form" action="https://echo.htmlacademy.ru">
-							<input class="input email aside-email" type="email" placeholder="Ваш e-mail">
+							<input class="input email aside-email" name="email" type="email" placeholder="Ваш e-mail">
 							<button class="button button-following" type="submit">Подписаться</button>
 						</form>
 					</div>
@@ -188,8 +188,7 @@
 							<path
 								d="M41.1 4.6C39.5 4.6 38.2 5.4 37.6 6.7H37.5C36.9 5.5 35.7 4.6 34.1 4.6C32.7 4.6 31.6 5.4 31 6.4H30.9V4.8H29V15.4H31V10C31 8 32 6.5 33.6 6.5C35.1 6.5 36 7.5 36 9.1V15.4H38V9.8C38 7.4 39.4 6.5 40.6 6.5C42.1 6.5 43 7.5 43 9.1V15.4H45V8.9C45.1 6.4 43.6 4.6 41.1 4.6Z"
 								fill="black" />
-							<path
-								d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9C50.2 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
+							<path d="M47.8 12.7C47.8 14.4 48.8 15.4 50.6 15.4H52.6V13.4H50.9C50.2 13.4 49.8 13 49.8 12.3V0H47.8V12.7Z"
 								fill="black" />
 							<path
 								d="M28.9 19.7C28 18.6 26.7 17.9 25 17.9C21.9 17.9 19.6 20.2 19.6 23.5C19.6 26.8 21.9 29.1 25 29.1C26.8 29.1 28 28.3 28.8 27.2H28.9V28.8H30.9V18.2H28.9V19.7ZM25.3 27.1C23.1 27.1 21.7 25.5 21.7 23.5C21.7 21.5 23.1 19.9 25.3 19.9C27.5 19.9 28.9 21.5 28.9 23.5C28.9 25.4 27.5 27.1 25.3 27.1Z"
@@ -230,7 +229,7 @@
 				</button>
 				<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 				<form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
-					<div class="modal-stok">
+					<div class="modal-stock">
 						<label class="arrival-date" for="arrival">Дата Заезда:</label>
 						<div class="for-button-relative">
 							<input class="text-input" type="text" id="arrival" value="27 апреля 2020">
@@ -241,10 +240,10 @@
 						<p class="modal-text error">Мы не можем отправить вас в прошлое.</p>
 					</div>
 
-					<div class="modal-stok">
-						<label class="arrival-date" for="diparture">Дата Выезда:</label>
+					<div class="modal-stock">
+						<label class="arrival-date" for="departure">Дата Выезда:</label>
 						<div class="for-button-relative">
-							<input class="text-input" type="text" id="diparture" value="1 сентября 2023">
+							<input class="text-input" type="text" id="departure" value="1 сентября 2023">
 							<button class="date-button" type="button">
 								<span class="visually-hidden">Календарь</span>
 							</button>
@@ -257,16 +256,16 @@
 							<label class="label-field">Взрослые:</label>
 							<span class="field-box">
 								<button class="field-button minus" type="button">
-									<svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1"
-										xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Минус.">
+									<svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"
+										role="img" aria-label="Минус.">
 										<path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
 									</svg>
 									<span class="visually-hidden">Минус</span>
 								</button>
 								<input class="field-number" name="adult" type="number" value="2" max="99">
 								<button class="field-button plus" type="button">
-									<svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13"
-										xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Плюс.">
+									<svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
+										role="img" aria-label="Плюс.">
 										<g opacity="0.3">
 											<path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
 										</g>
@@ -289,16 +288,16 @@
 							</div>
 							<span class="field-box">
 								<button class="field-button minus" type="button">
-									<svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1"
-										xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Минус.">
+									<svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" xmlns="http://www.w3.org/2000/svg"
+										role="img" aria-label="Минус.">
 										<path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
 									</svg>
 									<span class="visually-hidden">Минус</span>
 								</button>
 								<input class="field-number" name="adult" type="number" value="2" max="99">
 								<button class="field-button plus" type="button">
-									<svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13"
-										xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Плюс.">
+									<svg class="plus-svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
+										role="img" aria-label="Плюс.">
 										<g opacity="0.3">
 											<path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black" />
 										</g>

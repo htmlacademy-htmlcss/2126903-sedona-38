@@ -10,8 +10,8 @@
 
   <body>
     <div class="main-container">
-      <header data-test="header" class="page-header">
-        <nav class="page-novigation">
+      <header class="page-header" data-test="header">
+        <nav class="page-navigation">
           <a class="main-logo-link" href="#">
             <img class="main-logo" src="image/logo.svg" width="140" height="70" alt="Логотип городка Седона">
           </a>
@@ -47,14 +47,14 @@
         </nav>
       </header>
 
-      <main data-test="main" class="page-main">
+      <main class="page-main" data-test="main">
         <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
-        <section data-test="hero" class="main-header">
+        <section class="main-header" data-test="hero">
           <h2 class="visually-hidden">Приветствие городка Седона</h2>
           <img class="page-main-title" width="458" height="352" src="image/main-header-text-welcome.svg"
             alt="Приветствие на сайте города Седона.">
         </section>
-        <section data-test="advantages" class="page-info">
+        <section class="page-info" data-test="advantages">
           <div class="page-advantages">
             <p class="advantages-title">Седона — небольшой городок в Аризоне,
               заслуживающий большего!</p>
@@ -94,50 +94,50 @@
             </li>
           </ul>
         </section>
-        <section data-test="service" class="page-servies-info">
+        <section class="page-service-info" data-test="service">
           <div class="page-aside">
             <p class="page-aside-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
             <p class="page-aside-text">Опытный персонал и качественное обслуживание!</p>
           </div>
           <h2 class="visually-hidden">Услуги города Седоны</h2>
-          <ul class="servies-info-list">
-            <li class="servies-info-item">
-              <h2 class="servies-info-title servies-icon-home">Жильё</h2>
-              <p class="servies-info-text info-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
+          <ul class="service-info-list">
+            <li class="service-info-item">
+              <h2 class="service-info-title service-icon-home">Жильё</h2>
+              <p class="service-info-text info-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
             </li>
-            <li class="servies-info-item">
-              <h2 class="servies-info-title servies-icon-food">Еда</h2>
-              <p class="servies-info-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
+            <li class="service-info-item">
+              <h2 class="service-info-title service-icon-food">Еда</h2>
+              <p class="service-info-text">Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="servies-info-item">
-              <h2 class="servies-info-title servies-icon-souvenirs">Сувениры</h2>
-              <p class="servies-info-text">Не только китайского,<br>но и настоящего местного производства!</p>
+            <li class="service-info-item">
+              <h2 class="service-info-title service-icon-souvenirs">Сувениры</h2>
+              <p class="service-info-text">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
-        <section data-test="search" class="search-container">
+        <section class="search-container" data-test="search">
           <h2 class="visually-hidden">Поиск гостиниц в седоне</h2>
           <div class="search-inner-container">
             <p class="search-title">Заинтересовались?</p>
             <p class="search-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
               в
               Седоне</p>
-            <a class="button button-search">Поиск гостиницы в седоне</a>
+            <a class="button button-search" href="#">Поиск гостиницы в седоне</a>
           </div>
         </section>
-        <section data-test="subscribe" class="aside-container">
+        <section class="aside-container" data-test="subscribe">
           <div class="aside-inner-container">
             <h2 class="aside-title">Подпишитесь на рассылку</h2>
             <p class="aside-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="aside-form" action="https://echo.htmlacademy.ru">
-              <input class="input email aside-email" type="email" placeholder="Ваш e-mail">
+              <input class="input email aside-email" name="email" type="email" placeholder="Ваш e-mail">
               <button class="button button-following" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
       </main>
 
-      <footer data-test="footer" class="page-footer">
+      <footer class="page-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
@@ -214,7 +214,7 @@
 
     <div class="modal-container none">
       <div class="modal">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg class="close-button" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Крестик.">
             <path
@@ -224,10 +224,10 @@
         </button>
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-content" action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal-stok">
+          <div class="modal-stock">
             <label class="arrival-date" for="arrival">Дата Заезда:</label>
             <div class="for-button-relative">
-              <input class="text-input" type="text" id="arrival" value="27 апреля 2020">
+              <input class="text-input" name="data" type="text" id="arrival" value="27 апреля 2020">
               <button class="date-button" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
@@ -235,10 +235,10 @@
             <p class="modal-text error">Мы не можем отправить вас в прошлое.</p>
           </div>
 
-          <div class="modal-stok">
-            <label class="arrival-date" for="diparture">Дата Выезда:</label>
+          <div class="modal-stock">
+            <label class="arrival-date" for="departure">Дата Выезда:</label>
             <div class="for-button-relative">
-              <input class="text-input" type="text" id="diparture" value="1 сентября 2023">
+              <input class="text-input" name="data" type="text" id="departure" value="1 сентября 2023">
               <button class="date-button" type="button">
                 <span class="visually-hidden">Календарь</span>
               </button>
